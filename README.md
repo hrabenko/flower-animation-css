@@ -1,3 +1,3 @@
 # Flower CSS Animation
 
-![](.\gif.gif)
+![](gif.gif)
