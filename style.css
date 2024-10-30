@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+}
+
+.center {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: fixed;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    z-index: 1;
+    animation-name: center-animation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 25s;
+}
+
+.center p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 72px;
+    color: rgba(0, 0, 0, 0);
+    user-select: none;
+    animation-name: text-animation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 29s;
+}
+
+.petal {
+    width: 20px;
+    height: 80px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: fixed;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+.petal1 {
+    left: calc(50% - 10px);
+    top: calc(50% - 100px);
+    animation-name: petal1_animation;
+    animation-delay: 1s;
+}
+
+.petal2 {
+    left: calc(50% + 8px);
+    top: calc(50% - 97px);
+    rotate: 15deg;
+    animation-name: petal2_animation;
+    animation-delay: 2s;
+}
+
+.petal3 {
+    left: calc(50% + 25px);
+    top: calc(50% - 90px);
+    rotate: 30deg;
+    animation-name: petal3_animation;
+    animation-delay: 3s;
+}
+
+.petal4 {
+    left: calc(50% + 40px);
+    top: calc(50% - 80px);
+    rotate: 45deg;
+    animation-name: petal4_animation;
+    animation-delay: 4s;
+}
+
+.petal5 {
+    left: calc(50% + 45px);
+    top: calc(50% - 70px);
+    rotate: 60deg;
+    animation-name: petal5_animation;
+    animation-delay: 5s;
+    animation-duration: 3s;
+}
+
+.petal6 {
+    left: calc(50% + 50px);
+    top: calc(50% - 55px);
+    rotate: 75deg;
+    animation-name: petal6_animation;
+    animation-delay: 6s;
+    animation-duration: 3s;
+}
+
+.petal7 {
+    left: calc(50% + 50px);
+    top: calc(50% - 40px);
+    rotate: 90deg;
+    animation-name: petal7_animation;
+    animation-delay: 7s;
+    animation-duration: 3s;
+}
+
+.petal8 {
+    left: calc(50% + 50px);
+    top: calc(50% - 25px);
+    rotate: 105deg;
+    animation-name: petal8_animation;
+    animation-delay: 8s;
+    animation-duration: 3s;
+}
+
+.petal9 {
+    left: calc(50% + 44px);
+    top: calc(50% - 10px);
+    rotate: 120deg;
+    animation-name: petal9_animation;
+    animation-delay: 9s;
+    animation-duration: 3s;
+}
+
+.petal10 {
+    left: calc(50% + 35px);
+    top: calc(50%);
+    rotate: 135deg;
+    animation-name: petal10_animation;
+    animation-delay: 10s;
+}
+
+.petal11 {
+    left: calc(50% + 22px);
+    top: calc(50% + 10px);
+    rotate: 150deg;
+    animation-name: petal11_animation;
+    animation-delay: 11s;
+}
+
+.petal12 {
+    left: calc(50% + 8px);
+    top: calc(50% + 16px);
+    rotate: 165deg;
+    animation-name: petal12_animation;
+    animation-delay: 12s;
+}
+
+.petal13 {
+    right: calc(50% - 10px);
+    bottom: calc(50% - 100px);
+    rotate: 180deg;
+    animation-name: petal13_animation;
+    animation-delay: 13s;
+}
+
+/*--------*/
+.petal14 {
+    right: calc(50% + 8px);
+    bottom: calc(50% - 97px);
+    rotate: 195deg;
+    animation-name: petal14_animation;
+    animation-delay: 14s;
+}
+
+.petal15 {
+    right: calc(50% + 25px);
+    bottom: calc(50% - 90px);
+    rotate: 210deg;
+    animation-name: petal15_animation;
+    animation-delay: 15s;
+}
+
+.petal16 {
+    right: calc(50% + 40px);
+    bottom: calc(50% - 80px);
+    rotate: 225deg;
+    animation-name: petal16_animation;
+    animation-delay: 16s;
+}
+
+.petal17 {
+    right: calc(50% + 45px);
+    bottom: calc(50% - 70px);
+    rotate: 240deg;
+    animation-name: petal17_animation;
+    animation-delay: 17s;
+    animation-duration: 3s;
+
+}
+
+.petal18 {
+    right: calc(50% + 50px);
+    bottom: calc(50% - 55px);
+    rotate: 255deg;
+    animation-name: petal18_animation;
+    animation-delay: 18s;
+    animation-duration: 3s;
+}
+
+.petal19 {
+    right: calc(50% + 50px);
+    bottom: calc(50% - 40px);
+    rotate: 270deg;
+    animation-name: petal19_animation;
+    animation-delay: 19s;
+    animation-duration: 3s;
+}
+
+/*------------------*/
+.petal20 {
+    right: calc(50% + 50px);
+    bottom: calc(50% - 25px);
+    rotate: 285deg;
+    animation-name: petal20_animation;
+    animation-delay: 20s;
+    animation-duration: 3s;
+}
+
+.petal21 {
+    right: calc(50% + 44px);
+    bottom: calc(50% - 10px);
+    rotate: 300deg;
+    animation-name: petal21_animation;
+    animation-delay: 21s;
+    animation-duration: 3s;
+}
+
+.petal22 {
+    right: calc(50% + 35px);
+    bottom: calc(50%);
+    rotate: 315deg;
+    animation-name: petal22_animation;
+    animation-delay: 22s;
+}
+
+.petal23 {
+    right: calc(50% + 22px);
+    bottom: calc(50% + 10px);
+    rotate: 330deg;
+    animation-name: petal23_animation;
+    animation-delay: 23s;
+}
+
+.petal24 {
+    right: calc(50% + 8px);
+    bottom: calc(50% + 16px);
+    rotate: 345deg;
+    animation-name: petal24_animation;
+    animation-delay: 24s;
+}
+
+@keyframes petal1_animation {
+    0% {
+        top: calc(50% - 100px);
+    }
+    100%{
+        top: calc(50% - 450px);
+    }
+}
+
+@keyframes petal2_animation {
+    0% {
+        top: calc(50% - 97px);
+        left: calc(50% + 8px);
+    }
+    100%{
+        top: calc(50% - 450px);
+        left: calc(50% + 58px);
+    }
+}
+
+@keyframes petal3_animation {
+    0% {
+        left: calc(50% + 25px);
+        top: calc(50% - 90px);
+    }
+    100%{
+        left: calc(50% + 150px);
+        top: calc(50% - 450px);
+    }
+}
+
+@keyframes petal4_animation {
+    0% {
+        left: calc(50% + 40px);
+        top: calc(50% - 80px);
+    }
+    100%{
+        left: calc(50% + 250px);
+        top: calc(50% - 450px);
+    }
+}
+@keyframes petal5_animation {
+    0% {
+        left: calc(50% + 45px);
+        top: calc(50% - 70px);
+    }
+    100%{
+        left: calc(50% + 450px);
+        top: calc(50% - 600px);
+    }
+}
+@keyframes petal6_animation {
+    0% {
+        left: calc(50% + 50px);
+        top: calc(50% - 55px);
+    }
+    100%{
+        left: calc(50% + 800px);
+        top: calc(50% - 450px);
+    }
+}
+@keyframes petal7_animation {
+    0% {
+        left: calc(50% + 50px);
+    }
+    100%{
+        left: calc(50% + 800px);
+    }
+}
+@keyframes petal8_animation {
+    0% {
+        left: calc(50% + 50px);
+        top: calc(50% - 25px);
+    }
+    100%{
+        left: calc(50% + 700px);
+        top: calc(50% + 450px);
+    }
+}
+@keyframes petal9_animation {
+    0% {
+        left: calc(50% + 44px);
+        top: calc(50% - 10px);
+    }
+    100%{
+        left: calc(50% + 450px);
+        top: calc(50% + 450px);
+    }
+}
+@keyframes petal10_animation {
+    0% {
+        left: calc(50% + 35px);
+        top: calc(50%);
+    }
+    100%{
+        left: calc(50% + 250px);
+        top: calc(50% + 450px);
+    }
+}
+@keyframes petal11_animation {
+    0% {
+        left: calc(50% + 22px);
+        top: calc(50% + 10px);
+    }
+    100%{
+        left: calc(50% + 150px);
+        top: calc(50% + 450px);
+    }
+}
+
+@keyframes petal12_animation {
+    0% {
+        left: calc(50% + 8px);
+        top: calc(50% + 16px);
+    }
+    100%{
+        left: calc(50% + 58px);
+        top: calc(50% + 450px);
+    }
+}
+
+@keyframes petal13_animation {
+    0% {
+        top: calc(50% + 16px);
+    }
+    100%{
+        top: calc(50% + 450px);
+    }
+}
+
+@keyframes petal14_animation {
+    0% {
+        right: calc(50% + 8px);
+        bottom: calc(50% - 97px);
+    }
+    100%{
+        right: calc(50% + 58px);
+        bottom: calc(50% - 450px);
+    }
+}
+
+@keyframes petal15_animation {
+    0% {
+        right: calc(50% + 25px);
+        bottom: calc(50% - 90px);
+    }
+    100%{
+        right: calc(50% + 150px);
+        bottom: calc(50% - 450px);
+    }
+}
+
+@keyframes petal16_animation {
+    0% {
+        right: calc(50% + 40px);
+        bottom: calc(50% - 80px);
+    }
+    100%{
+        right: calc(50% + 250px);
+        bottom: calc(50% - 450px);
+    }
+}
+
+@keyframes petal17_animation {
+    0% {
+        right: calc(50% + 45px);
+        bottom: calc(50% - 70px);
+    }
+    100%{
+        right: calc(50% + 450px);
+        bottom: calc(50% - 450px);
+    }
+}
+
+@keyframes petal18_animation {
+    0% {
+        right: calc(50% + 50px);
+        bottom: calc(50% - 55px);
+    }
+    100%{
+        right: calc(50% + 600px);
+        bottom: calc(50% - 450px);
+    }
+}
+
+@keyframes petal19_animation {
+
+    0% {
+        right: calc(50% + 50px);
+    }
+    100%{
+        right: calc(50% + 800px);
+    }
+}
+
+@keyframes petal20_animation {
+    0% {
+        right: calc(50% + 50px);
+        bottom: calc(50% - 25px);
+    }
+    100%{
+        right: calc(50% + 600px);
+        bottom: calc(50% + 450px);
+    }
+}
+
+@keyframes petal21_animation {
+    0% {
+        right: calc(50% + 44px);
+        bottom: calc(50% - 10px);
+    }
+    100%{
+        right: calc(50% + 450px);
+        bottom: calc(50% + 450px);
+    }
+}
+
+@keyframes petal22_animation {
+    0% {
+        right: calc(50% + 35px);
+        bottom: calc(50%);
+    }
+    100%{
+        right: calc(50% + 250px);
+        bottom: calc(50% + 450px);
+    }
+}
+
+@keyframes petal23_animation {
+    0% {
+        right: calc(50% + 22px);
+        bottom: calc(50% + 10px);
+    }
+    100%{
+        right: calc(50% + 150px);
+        bottom: calc(50% + 450px);
+    }
+}
+
+@keyframes petal24_animation {
+    0% {
+        right: calc(50% + 8px);
+        bottom: calc(50% + 16px);
+    }
+    100%{
+        right: calc(50% + 58px);
+        bottom: calc(50% + 450px);
+    }
+}
+
+@keyframes text-animation {
+    0% {
+        color: rgba(0, 0, 0, 0);
+    }
+    100% {
+        color: brown;
+
+    }
+}
+
+@keyframes center-animation {
+    0% {
+        width: 50px;
+        height: 50px;
+        top: calc(50% - 25px);
+        left: calc(50% - 25px);
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        top: calc(50% - 250px);
+        left: calc(50% - 250px);
+    }
+}
